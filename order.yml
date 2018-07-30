@@ -1,12 +1,6 @@
 spring:
   application:
     name: order
-  cloud:
-    config:
-      discovery:
-        enabled: true
-        service-id: CONFIG
-      profile: test
   datasource:
       driver-class-name: com.mysql.jdbc.Driver
       username: root
@@ -14,9 +8,3 @@ spring:
       url: jdbc:mysql://127.0.0.1/spring_cloud_sell?characterEncoding=utf-8&userSSL=false
   jpa:
     show-sql: true
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
-server:
-  port: 8081
